@@ -5,7 +5,6 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.progettogit.model.Booking;
 import com.example.progettogit.model.Flight;
 import com.example.progettogit.repository.FlightRepository;
 
