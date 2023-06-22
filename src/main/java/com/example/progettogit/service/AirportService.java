@@ -2,11 +2,13 @@ package com.example.progettogit.service;
 
 
 
+import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.progettogit.model.Airport;
+import com.example.progettogit.model.Booking;
 import com.example.progettogit.repository.AirportRepository;
 
 
@@ -15,6 +17,11 @@ public class AirportService {
 
     @Autowired
     AirportRepository airportRepository;
+
+    public List<Airport> getAllAirport() {
+
+        return airportRepository.findAll(); 
+    }
 
     
     public Airport getAirportByID(Long id) {
